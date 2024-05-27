@@ -6,8 +6,8 @@ function ProductCard({ title, price }) {
   return (
     <div className="flex flex-col space-y-3">
       <img src={img} alt={`Model ${title}`} className="rounded-md w-full max-w-xs" />
-      <h3 className="text-sky-900 font-bold  text-xl font-sans">{title}</h3>
-      <p className="text-sky-900 font-medium text-base font-sans">
+      <h3 className="text-sky-900 font-bold  text-xl">{title}</h3>
+      <p className="text-sky-900 font-medium text-base">
         Queen <span className="line-through"> $0,000.00</span> <span className="text-blue-500">$0,000.00</span>
       </p>
       <p className="uppercase text-sm font-semibold text-green-700">
@@ -25,7 +25,7 @@ function App() {
           <ProductCard key={model} title={model} />
         ))}
       </div>
-      <button className="px-6 py-4 rounded-lg bg-blue-500 text-white text-lg font-sans font-semibold max-w-fit">
+      <button className="px-4 py-3 rounded-lg bg-blue-500 text-white text-lg font-semibold max-w-fit">
         Shop collection
       </button>
     </div>
